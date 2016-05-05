@@ -8,8 +8,6 @@ import browserSync from 'browser-sync';
 import watchify from 'watchify';
 import babelify from 'babelify';
 
-watchify.args.debug = true;
-
 const sync = browserSync.create();
 
 // Input file.
@@ -46,7 +44,7 @@ gulp.task('lint', () => {
       .pipe(eslint.format())
 });
 
-gulp.task('serve', ['transpile'], () => sync.init({ server: 'public' }))
+gulp.task('serve', ['transpile'], () => sync.init({ proxy: 'http://localhost:3000'}))
 gulp.task('js-watch', ['transpile'], () => sync.reload());
 
 gulp.task('watch', ['serve'], () => {
