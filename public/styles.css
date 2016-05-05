@@ -1,0 +1,11 @@
+.col-md-1.bolded {
+	font-weight:bold;
+}
+.table.custom {
+	margin-bottom:0px;
+}
+
+.col-md-4.extra {
+	padding-right:0px;
+	padding-left:0px;
+}
