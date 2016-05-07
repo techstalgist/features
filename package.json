@@ -32,8 +32,9 @@
     "gulp": "^3.9.0",
     "gulp-eslint": "^2.0.0",
     "react": "^15.0.1",
+    "react-addons-update": "^15.0.2",
     "react-dom": "^15.0.1",
-    "react-addons-update":"^15.0.2",
+    "react-router": "^2.4.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
